@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Customer List</title>
+	<link rel="stylesheet" type="text/css" href="list.css">
+</head>
+<body>
+
+<table class="list">
+	<tr><th>ID</th><th>Customer Name</th></tr>
+	<?php 
+	foreach ($listToInvite as $key => $invitee) { 
+	?>
+	<tr>
+		<td><?php echo htmlspecialchars($key) ?></td>
+		<td><?php echo htmlspecialchars($invitee) ?></td>
+	</tr>
+	<?php 
+	}
+	?>
+</table>
+<?php
+
+?>
+</body>
+</html>
